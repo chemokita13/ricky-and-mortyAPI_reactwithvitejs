@@ -12,5 +12,6 @@ export default defineConfig({
         watch: {
             usePolling: true,
         },
+        hmr: false, // hmr not working with tailwindcss, i dont know why :c
     },
 });
