@@ -2,15 +2,14 @@ import React from "react";
 
 function Char({ character }) {
     return (
-        <div className="bg-black">
-            <h2>
-                {character.name}, {character.id}
-            </h2>
+        <div className="text-center text-slate-400 sm:m-10">
+            <h2 className="text-2xl">{character.name}</h2>
             <img
-                //key={character.id}
                 src={character.image}
                 alt="Character photo"
+                className="rounded-full my-5"
             />
+            <h3 className="">{character.origin.name}</h3>
         </div>
     );
 }

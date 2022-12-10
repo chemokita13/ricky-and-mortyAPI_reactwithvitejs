@@ -8,4 +8,9 @@ export default defineConfig({
             include: "./src/**/*.{js,ts,jsx,tsx}",
         }),
     ],
+    server: {
+        watch: {
+            usePolling: true,
+        },
+    },
 });

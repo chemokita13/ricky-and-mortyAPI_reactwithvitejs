@@ -21,7 +21,7 @@ function CharsList() {
     }, []);
 
     return (
-        <div>
+        <div className="my-1 p-10 gap-10 grid grid-cols-1 sm:grid-cols-3">
             {chars[1] && // if chars exits
                 chars.map((char) => {
                     return <Char character={char} key={char.id} />;
