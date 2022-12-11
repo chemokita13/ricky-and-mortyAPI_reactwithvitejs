@@ -7,7 +7,7 @@ function App() {
             <h1 className="text-neutral-100 text-7xl text-center p-5">
                 Ricky and Morty
             </h1>
-            <CharsList /> {/*Chars list */}
+            <CharsList />
         </div>
     );
 }

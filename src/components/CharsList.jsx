@@ -48,8 +48,8 @@ function LoadPageBtns({ page, setPage }) {
 }
 
 function CharsList() {
-    const [chars, setChars] = useState({});
-    const [pageToLoad, setPageToLoad] = useState(1);
+    const [chars, setChars] = useState({}); // array of chars to show gave by the API
+    const [pageToLoad, setPageToLoad] = useState(1); // page to load
 
     useEffect(() => {
         async function getAPIdata() {
@@ -58,10 +58,7 @@ function CharsList() {
                 `https://rickandmortyapi.com/api/character/?page=${pageToLoad}`
             );
             const data = await res.json();
-            ///await setCharsAPI(data.results); // I don't know why but doesn't works without await
-            setChars([...data.results]);
-            console.log("data from API: ", typeof data.results, data.results);
-            console.log("data from API stored: ", typeof chars);
+            setChars([...data.results]); // I dont know why but if is: 'setChars(data.results)' not works
         }
 
         getAPIdata();
