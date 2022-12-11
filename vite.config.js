@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    base: "https://github.io/chemokita13/ricky-and-mortyAPI_reactwithvitejs",
+    base: "https://chemokita13.github.io/ricky-and-mortyAPI_reactwithvitejs",
     plugins: [
         react({
             include: "./src/**/*.{js,ts,jsx,tsx}",
